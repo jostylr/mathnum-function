@@ -1,4 +1,4 @@
-mathnum-transcendental
+mathnum-function
 ======================
 
-Transcendental functions for math numbers
+Functions for math-numbers.

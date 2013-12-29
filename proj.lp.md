@@ -1,6 +1,16 @@
 # [mathnum-function](# "version: 0.0.1 | jostylr")
 
-Implementing functions for math-numbers
+Implementing functions for math-numbers.
+
+This includes
+
+1. a Fun constructor that all functions should inherit from.
+2. The basic functions that everyone expects. 
+3. Lots of useful generic prototype properties that can be either used or should be overwrriten. 
+
+What I have in mind is something like  Fun.method yields a function that expects to be called with a context of a number while Fun.function would yield a stand-alone function. 
+
+So for example  var exp = new Fun(...) could create a new function. To attach the exp function to something, we can do Num.exp = exp.method  to enable  x.exp().add(y)  to signify e^x + y.  But we could also have exp.function(x).add(y)  for the same thing.  Maybe we could let the Fun be a function so that exp(x) just works without having another variable function. 
 
 ## Files
 
